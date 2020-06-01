@@ -23,3 +23,8 @@ class Rectangle():
         self.width = y
     def getArea(self):# getter геттер - выдает площадь
         return self.width * self.height
+
+
+Rect1=Rectangle(2,3)
+Rect2=Rectangle(10,10)
+Rect3=Rectangle(99,33)
