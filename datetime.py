@@ -17,6 +17,8 @@ class Rectangle():
          self.height = deminsion1
          self.width = deminsion2
 
+    def __str__(self):
+        return "квадрат со сторонами " + str(self.height) + " и " + str(self.width)
 
     def redraw(self,x,y):
         # передаём значения в высоту
@@ -30,12 +32,7 @@ class Rectangle():
 Rect1=Rectangle(2,3)
 Rect2=Rectangle(10,10)
 Rect3=Rectangle(99,33)
-print("вывод ширины и длины первого квадрата")
-print(Rect1.height)
-print(Rect1.width)
-print("вывод ширины и длины второго квадрата")
-print(Rect2.height)
-print(Rect2.width)
-print("вывод ширины и длины третьего квадрата")
-print(Rect3.height)
-print(Rect3.width)
+print(Rect1)
+
+print(Rect2)
+print(Rect3)
