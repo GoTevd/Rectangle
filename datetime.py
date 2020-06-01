@@ -4,6 +4,8 @@
 # d = int(input())
 # e = int(input())
 # f = int(input())
+from itertools import product
+
 
 class Rectangle():
     # ширина квадрата
@@ -28,3 +30,6 @@ class Rectangle():
 Rect1=Rectangle(2,3)
 Rect2=Rectangle(10,10)
 Rect3=Rectangle(99,33)
+
+print(Rect1.height)
+print(Rect1.width)
