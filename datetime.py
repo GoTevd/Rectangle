@@ -23,7 +23,7 @@ class Rectangle():
         return self.width * self.height
 
 
-Rect1=Rectangle(2,3)
+Rect1=Rectangle(200,300)
 Rect2=Rectangle(10,10)
 Rect3=Rectangle(99,33)
 print(Rect1)
@@ -45,8 +45,23 @@ def draw_rectangle(x, y, width, height):
   turtle.left(90)
 
 
-x = print(input("Enter x"))
-y = print(input("Enter y"))
-width = print(input("Enter width"))
-height = print(input("Enter height"))
+
+x = 10
+y = 30
+width = Rect1.width
+height = Rect1.height
 print(draw_rectangle(x, y, width, height))
+
+x = 2
+y = 5
+width = Rect2.width
+height = Rect2.height
+print(draw_rectangle(x, y, width, height))
+
+x = 2
+y = 5
+width = Rect3.width
+height = Rect3.height
+print(draw_rectangle(x, y, width, height))
+
+turtle.done()
