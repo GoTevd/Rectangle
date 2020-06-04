@@ -1,10 +1,4 @@
-# a = int(input())
-# b = int(input())
-# c = int(input())
-# d = int(input())
-# e = int(input())
-# f = int(input())
-from itertools import product
+import turtle
 
 
 class Rectangle():
@@ -36,3 +30,23 @@ print(Rect1)
 
 print(Rect2)
 print(Rect3)
+
+def draw_rectangle(x, y, width, height):
+  turtle.up()
+  turtle.goto(x, y)
+  turtle.down()
+  turtle.forward(width)
+  turtle.left(90)
+  turtle.forward(height)
+  turtle.left(90)
+  turtle.forward(width)
+  turtle.left(90)
+  turtle.forward(height)
+  turtle.left(90)
+
+
+x = print(input("Enter x"))
+y = print(input("Enter y"))
+width = print(input("Enter width"))
+height = print(input("Enter height"))
+print(draw_rectangle(x, y, width, height))
